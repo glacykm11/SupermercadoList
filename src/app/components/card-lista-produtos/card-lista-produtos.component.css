@@ -1,0 +1,21 @@
+.card-lista-produtos{
+    display: grid;
+    background-color: #A1DBAE;
+    margin: 10%;
+    border-radius: 10px;
+}
+
+.lista-produtos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-card-lista-produtos{
+    display: flex;
+    justify-content: center;
+}
+
+.linhas-iniciais{
+    display: flex;
+    justify-content: space-around;
+}

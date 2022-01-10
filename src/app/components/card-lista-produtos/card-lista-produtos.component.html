@@ -1,0 +1,19 @@
+<section class="card-lista-produtos"> 
+    <header class="cabecalho-produtos">
+        <h1 class="titulo-card-lista-produtos">PRODUTOS</h1>
+
+        <section class="linhas-iniciais"> 
+            <p>ID</p>
+            <p>Nome</p>
+            <p>Quantidade</p>
+            <p>Preço</p>   
+        </section>
+    </header>
+
+    <main class="lista-produtos" *ngFor="let produto of produtos"> 
+        <p class="informacoes-produto">{{produto?.id}}</p>
+        <p class="informacoes-produto">{{produto?.nome}}</p>
+        <p class="informacoes-produto">{{produto?.quantidade}}</p>
+        <p class="informacoes-produto">{{produto?.preco | currency: "BRL" }}</p>
+    </main>
+</section>
