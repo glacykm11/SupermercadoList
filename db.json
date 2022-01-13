@@ -17,6 +17,12 @@
             "nome": "Brilhante",
             "quantidade": 3,
             "preco": 40
+        },
+        {  
+            "id": 4,
+            "nome": "Brilhante",
+            "quantidade": 1,
+            "preco": 20
         } 
     ]
 }

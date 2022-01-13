@@ -8,7 +8,7 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 })
 export class CardTotalComponent implements OnInit {
   
-  @Output() resultado:number;
+  @Input() resultado:number;
   constructor() { }
   
   ngOnInit() {

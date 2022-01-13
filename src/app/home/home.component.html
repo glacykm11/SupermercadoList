@@ -1,4 +1,4 @@
 <h1>Lista Supermercado</h1>
-<app-card-total></app-card-total>
-<app-card-lista-produtos [resultado]="totalProdutos" >
+<app-card-total [resultado]="totalProdutos" ></app-card-total>
+<app-card-lista-produtos (resultado)="total($event)" >
 </app-card-lista-produtos>

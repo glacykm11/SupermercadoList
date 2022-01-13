@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   
-  public totalProdutos: number ;
+  public totalProdutos:number ;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  total(resultado){
+    this.totalProdutos = resultado
+    console.log('o resultado é ==',resultado);
+    
+  }
 }

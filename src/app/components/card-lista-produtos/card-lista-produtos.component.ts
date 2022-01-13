@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Produto } from 'src/app/models/IProduto';
 import { ProdutoServiceService } from 'src/app/shared/services/produto-service.service';
@@ -12,9 +12,12 @@ export class CardListaProdutosComponent implements OnInit {
 
   produtos: Produto[];
   produto: Produto;
-  @Input() resultado: any;
+  @Output() resultado = new EventEmitter<any>();
+  
+
   constructor(private produtoService: ProdutoServiceService) { }
   
+
   ngOnInit() {
     this.getProdutos()
     setTimeout( () => {
@@ -26,7 +29,6 @@ export class CardListaProdutosComponent implements OnInit {
     this.produtoService.getProdutos()
     .subscribe(
       (response:Produto[]) => {
-        console.log(response);
         this.produtos = response;
       }
     )
@@ -36,7 +38,6 @@ export class CardListaProdutosComponent implements OnInit {
     this.produtoService.getProdutoById(id)
     .subscribe(
       (response:Produto) => {
-        console.log(response);
         this.produto = response;
         
       }
@@ -47,8 +48,11 @@ export class CardListaProdutosComponent implements OnInit {
     let soma = 0
     this.produtos.forEach(produto => {
       soma += produto.preco * produto.quantidade
-      this.resultado = soma
+      //console.log('A soma é == ', soma);
+      
     })
+    
+    this.resultado.emit(soma)
     console.log(this.resultado);
   }
  

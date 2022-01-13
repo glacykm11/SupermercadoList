@@ -4,8 +4,6 @@
     </header>
     
     <main class="valor-total">
-        <h2 class="preco-total">R$200,00</h2>
+        <h2 class="preco-total">{{resultado | currency: "BRL"}} </h2>
     </main>
-    <pre> {{resultado | json}}</pre>
-    <p>{{resultado}}</p>
 </section>
