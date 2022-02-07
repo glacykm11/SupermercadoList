@@ -1,0 +1,21 @@
+<section>
+    <header>
+        <h1>Adicionar Produto</h1>
+    </header>
+
+    <section id="produtoForm">
+        <form [formGroup]="produtoForm" (ngSubmit)="adicionarProduto(produtoForm)">
+            <label>Nome:</label>
+            <input type="text" formControlName="nomeProduto">
+
+            <label>Quantidade:</label>
+            <input type="text" formControlName="quantidadeProduto">
+
+            <label>Preço:</label>
+            <input type="text" formControlName="precoProduto">
+        </form>
+    </section>
+
+    <button id="buttonForm" type="submit" [disabled]="!produtoForm.valid" (click)="adicionarProduto(produtoForm)">Adicionar</button>
+</section>
+
