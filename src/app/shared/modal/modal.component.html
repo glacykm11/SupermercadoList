@@ -6,13 +6,13 @@
     <section id="produtoForm">
         <form [formGroup]="produtoForm" (ngSubmit)="adicionarProduto(produtoForm)">
             <label>Nome:</label>
-            <input type="text" formControlName="nomeProduto">
+            <input type="text"  formControlName="nome">
 
             <label>Quantidade:</label>
-            <input type="text" formControlName="quantidadeProduto">
+            <input type="text" name="quantidadeProduto" formControlName="quantidade">
 
             <label>Preço:</label>
-            <input type="text" formControlName="precoProduto">
+            <input type="text"  formControlName="preco">
         </form>
     </section>
 
