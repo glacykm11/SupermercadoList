@@ -12,6 +12,7 @@ export class ProdutoServiceService {
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+
   }
 
   urlProdutos: string = 'http://localhost:3000/produtos'

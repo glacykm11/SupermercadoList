@@ -8,6 +8,9 @@ import { CardListaProdutosComponent } from './components/card-lista-produtos/car
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'
 import { ProdutoServiceService } from './shared/services/produto-service.service';
+import { OpcoesComponent } from './shared/opcoes/opcoes.component';
+import { ModalComponent } from './shared/modal/modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,12 +18,15 @@ import { ProdutoServiceService } from './shared/services/produto-service.service
     AppComponent,
     HomeComponent,
     CardTotalComponent,
-    CardListaProdutosComponent
+    CardListaProdutosComponent,
+    OpcoesComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [ProdutoServiceService],
   bootstrap: [AppComponent]

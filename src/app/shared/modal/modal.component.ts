@@ -14,19 +14,15 @@ export class ModalComponent implements OnInit {
 
   constructor(private produtoService: ProdutoServiceService){}
 
-  ngOnInit(): void {
-   
-  }
+  ngOnInit(): void {}
 
   produtoForm = new FormGroup({
-    nomeProduto: new FormControl(''),
-    quantidadeProduto: new FormControl(''),
-    precoProduto: new FormControl(''),
+    nome: new FormControl(''),
+    quantidade: new FormControl(''),
+    preco: new FormControl(''),
   })
 
-
-
   adicionarProduto(form: any){
-    this.produtoService.saveProduct(this.produto).subscribe(response => console.log(response));
+    this.produtoService.saveProduct(form.value).subscribe();
   }
 }
