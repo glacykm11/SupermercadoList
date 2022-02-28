@@ -1,14 +1,14 @@
-import { ProdutoServiceService } from './../services/produto-service.service';
+import { ProdutoServiceService } from '../services/produto-service.service';
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Form, FormControl, FormGroup } from '@angular/forms';
 import { Produto } from 'src/app/models/IProduto';
 
 @Component({
-  selector: 'app-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  selector: 'app-adicionar-produto',
+  templateUrl: './adicionar-produto.component.html',
+  styleUrls: ['./adicionar-produto.component.css']
 })
-export class ModalComponent implements OnInit {
+export class AdicionarProdutoComponent implements OnInit {
   produto = {} as Produto;
   produtos: Produto[];
 
@@ -24,5 +24,6 @@ export class ModalComponent implements OnInit {
 
   adicionarProduto(form: any){
     this.produtoService.saveProduct(form.value).subscribe();
+    window.alert('O produto foi adicionado na lista com sucesso!')
   }
 }

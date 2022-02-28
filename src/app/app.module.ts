@@ -9,8 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'
 import { ProdutoServiceService } from './shared/services/produto-service.service';
 import { OpcoesComponent } from './shared/opcoes/opcoes.component';
-import { ModalComponent } from './shared/modal/modal.component';
+import { AdicionarProdutoComponent } from './shared/adicionar-produto/adicionar-produto.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardTotalComponent,
     CardListaProdutosComponent,
     OpcoesComponent,
-    ModalComponent
+    AdicionarProdutoComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

@@ -19,17 +19,15 @@ export class CardListaProdutosComponent implements OnInit {
   
 
   ngOnInit() {
-    this.getProdutos()
-    setTimeout( () => {
-      this.totalProdutos()
-    },1000)
-    
+    this.getProdutos();
   }
+
   getProdutos(){
     this.produtoService.getProdutos()
     .subscribe(
       (response:Produto[]) => {
         this.produtos = response;
+        this.totalProdutos();
       }
     )
   }
