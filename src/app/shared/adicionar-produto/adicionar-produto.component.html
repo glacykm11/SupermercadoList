@@ -1,23 +1,25 @@
-<app-nav-bar></app-nav-bar>
+<div>
+    <app-nav-bar></app-nav-bar>
 
-<section>
-    <header>
-        <h1>Adicionar Produto</h1>
-    </header>
+    <section>
+        <header>
+            <h1>Adicionar Produto</h1>
+        </header>
 
-    <section id="produtoForm">
-        <form [formGroup]="produtoForm" (ngSubmit)="adicionarProduto(produtoForm)">
-            <label>Nome:</label>
-            <input type="text"  formControlName="nome">
+        <section id="produtoForm">
+            <form [formGroup]="produtoForm" (ngSubmit)="adicionarProduto(produtoForm)">
+                <label>Nome:</label>
+                <input type="text"  formControlName="nome">
 
-            <label>Quantidade:</label>
-            <input type="text" name="quantidadeProduto" formControlName="quantidade">
+                <label>Quantidade:</label>
+                <input type="text" name="quantidadeProduto" formControlName="quantidade">
 
-            <label>Preço:</label>
-            <input type="text"  formControlName="preco">
-        </form>
+                <label>Preço:</label>
+                <input type="text"  formControlName="preco">
+            </form>
+        </section>
+
+        <button id="buttonForm" type="submit" [disabled]="!produtoForm.valid" (click)="adicionarProduto(produtoForm)">Adicionar</button>
     </section>
-
-    <button id="buttonForm" type="submit" [disabled]="!produtoForm.valid" (click)="adicionarProduto(produtoForm)">Adicionar</button>
-</section>
+</div>
 
