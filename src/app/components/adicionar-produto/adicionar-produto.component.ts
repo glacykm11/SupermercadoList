@@ -1,6 +1,6 @@
-import { ProdutoServiceService } from '../services/produto-service.service';
+import { ProdutoServiceService } from '../../shared/services/produto-service.service';
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { Form, FormControl, FormGroup } from '@angular/forms';
+import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Produto } from 'src/app/models/IProduto';
 
 @Component({
@@ -17,9 +17,9 @@ export class AdicionarProdutoComponent implements OnInit {
   ngOnInit(): void {}
 
   produtoForm = new FormGroup({
-    nome: new FormControl(''),
-    quantidade: new FormControl(''),
-    preco: new FormControl(''),
+    nome: new FormControl('', Validators.required),
+    quantidade: new FormControl('', Validators.required),
+    preco: new FormControl('', Validators.required),
   })
 
   adicionarProduto(form: any){

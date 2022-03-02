@@ -1,6 +1,13 @@
-<div >
+<header class="component-navbar">
     <app-nav-bar></app-nav-bar>
-    <app-card-total [resultado]="totalProdutos" ></app-card-total>
-    <app-card-lista-produtos (resultado)="total($event)" >
-    </app-card-lista-produtos>
-</div>
+</header>
+
+<main>
+    <section class="cardtotal"> 
+        <app-card-total [resultado]="totalProdutos"></app-card-total>
+    </section>
+
+    <section class="cardlistaprodutos">
+        <app-card-lista-produtos (resultado)="total($event)"></app-card-lista-produtos>  
+    </section>
+</main>

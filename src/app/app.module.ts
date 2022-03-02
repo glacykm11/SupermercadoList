@@ -8,8 +8,7 @@ import { CardListaProdutosComponent } from './components/card-lista-produtos/car
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'
 import { ProdutoServiceService } from './shared/services/produto-service.service';
-import { OpcoesComponent } from './shared/opcoes/opcoes.component';
-import { AdicionarProdutoComponent } from './shared/adicionar-produto/adicionar-produto.component';
+import { AdicionarProdutoComponent } from './components/adicionar-produto/adicionar-produto.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 
@@ -20,7 +19,6 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
     HomeComponent,
     CardTotalComponent,
     CardListaProdutosComponent,
-    OpcoesComponent,
     AdicionarProdutoComponent,
     NavBarComponent
   ],
