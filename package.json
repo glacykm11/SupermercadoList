@@ -1,6 +1,6 @@
 {
   "name": "supermercado-list",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,14 +11,14 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~13.2.4",
-    "@angular/common": "~13.2.4",
-    "@angular/compiler": "~13.2.4",
-    "@angular/core": "~13.2.4",
-    "@angular/forms": "~13.2.4",
-    "@angular/platform-browser": "~13.2.4",
-    "@angular/platform-browser-dynamic": "~13.2.4",
-    "@angular/router": "~13.2.4",
+    "@angular/animations": "~8.2.2",
+    "@angular/common": "~8.2.2",
+    "@angular/compiler": "~8.2.2",
+    "@angular/core": "~8.2.2",
+    "@angular/forms": "~8.2.2",
+    "@angular/platform-browser": "~8.2.2",
+    "@angular/platform-browser-dynamic": "~8.2.2",
+    "@angular/router": "~8.2.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.11.4"
