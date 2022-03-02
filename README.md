@@ -2,7 +2,7 @@
 
 Esse projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
-![Imagens da aplicação](../SupermercadoList/src/assets/images/print-supermercado-list.png)
+![Imagens da aplicação](https://raw.githubusercontent.com/glacykm11/SupermercadoList/main/.github/images/(src\assets\images\print-supermercado-list.png)
 
 ## Servidor no modo developer
 
