@@ -15,7 +15,7 @@ export class ProdutoServiceService {
 
   }
 
-  urlProdutos: string = 'http://localhost:3000/produtos'
+  urlProdutos: string = 'http://localhost:8000/produtos';
 
   getProdutos():Observable<Produto[]>{
      return this.http.get<Produto[]>(this.urlProdutos).pipe(map((response:Produto[]) => response))
