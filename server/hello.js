@@ -11,7 +11,7 @@ const produtos = JSON.stringify([
 
 const listarProdutos = function (req, res) {
     res.setHeader("Content-Type", "application/json");
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000')
+    res.setHeader('Access-Control-Allow-Origin', '*')
     switch (req.url) {
         case "/produtos":
             res.writeHead(200);
