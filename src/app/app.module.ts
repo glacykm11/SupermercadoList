@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { ProdutoServiceService } from './shared/services/produto-service.service';
 import { AdicionarProdutoComponent } from './components/adicionar-produto/adicionar-produto.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { ProdutoServiceService } from '../../shared/services/produto-service.service';
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Produto } from 'src/app/models/IProduto';
+import { Produto } from 'src/app/shared/models/IProduto';
 
 @Component({
   selector: 'app-adicionar-produto',

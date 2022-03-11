@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Produto } from 'src/app/models/IProduto';
+import { Produto } from 'src/app/shared/models/IProduto';
 import { ProdutoServiceService } from 'src/app/shared/services/produto-service.service';
 
 @Component({

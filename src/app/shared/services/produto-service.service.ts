@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { Produto } from 'src/app/models/IProduto';
+import { Produto } from 'src/app/shared/models/IProduto';
 import { catchError, map, retry } from 'rxjs/operators';
 
 @Injectable({
@@ -15,7 +15,7 @@ export class ProdutoServiceService {
 
   }
 
-  urlProdutos: string = 'http://localhost:8000/produtos';
+  urlProdutos: string = 'http://localhost:3000/produtos';
 
   getProdutos():Observable<Produto[]>{
      return this.http.get<Produto[]>(this.urlProdutos).pipe(map((response:Produto[]) => response))
