@@ -6,10 +6,13 @@
     background-color: #5877aa;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5%;
 }
 
+button:disabled{
+    color: #fff;
+}
