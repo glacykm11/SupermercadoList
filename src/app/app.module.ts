@@ -1,5 +1,8 @@
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -10,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { ProdutoServiceService } from './shared/services/produto-service.service';
 import { AdicionarProdutoComponent } from './components/adicionar-produto/adicionar-produto.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -27,6 +31,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [ProdutoServiceService],
   bootstrap: [AppComponent]

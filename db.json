@@ -29,6 +29,30 @@
       "quantidade": "1",
       "preco": "4",
       "id": 5
+    },
+    {
+      "nome": "Gaby",
+      "quantidade": "1",
+      "preco": "2",
+      "id": 6
+    },
+    {
+      "nome": "Gaby",
+      "quantidade": "1",
+      "preco": "2",
+      "id": 7
+    },
+    {
+      "nome": "Gabrielly",
+      "quantidade": "2",
+      "preco": "12",
+      "id": 8
+    },
+    {
+      "nome": "Gabrielly",
+      "quantidade": "2",
+      "preco": "12",
+      "id": 9
     }
   ]
 }

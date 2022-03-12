@@ -1,5 +1,5 @@
 import { ProdutoServiceService } from '../../shared/services/produto-service.service';
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Produto } from 'src/app/shared/models/IProduto';
 
