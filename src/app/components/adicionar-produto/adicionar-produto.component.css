@@ -6,7 +6,7 @@
     background-color: #5877aa;
 }
 
-form {
+.modal__produto-formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,4 +15,11 @@ form {
 
 button:disabled{
     color: #fff;
+}
+
+.modal__adicionar-produto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
