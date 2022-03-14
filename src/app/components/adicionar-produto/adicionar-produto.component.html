@@ -1,13 +1,17 @@
-<section>
-    <section id="produtoForm">
-        <form [formGroup]="produtoForm" (ngSubmit)="adicionarProduto(produtoForm)">
+<section class="modal__adicionar-produto">
+    <section>
+        <h1>Adicione um produto</h1>
+    </section>
+
+    <section>
+        <form class="modal__produto-formulario" [formGroup]="produtoForm" (ngSubmit)="adicionarProduto(produtoForm)">
 
             <label>Nome do Produto:</label>
-            <input type="text" formControlName="nome">
+            <input type="text" formControlName="nome" placeholder="Digite o nome do produto">
             <label>Quantidade:</label>
-            <input type="text" formControlName="quantidade">
+            <input type="text" formControlName="quantidade" placeholder="Digite a quantidade do produto">
             <label>Preço do Produto:</label>
-            <input type="text" formControlName="preco">
+            <input type="text" formControlName="preco" placeholder="Digite o preço do produto">
 
             <button mat-button id="buttonForm" type="submit" [disabled]="!produtoForm.valid" (click)="adicionarProduto(produtoForm)">Adicionar</button>
         </form>
