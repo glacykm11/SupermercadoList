@@ -15,6 +15,7 @@ import { AdicionarProdutoComponent } from './components/adicionar-produto/adicio
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { EditarProdutoComponent } from './components/editar-produto/editar-produto.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MatButtonModule } from '@angular/material/button';
     CardTotalComponent,
     CardListaProdutosComponent,
     AdicionarProdutoComponent,
-    NavBarComponent
+    NavBarComponent,
+    EditarProdutoComponent
   ],
   imports: [
     BrowserModule,
