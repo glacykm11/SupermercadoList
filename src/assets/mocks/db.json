@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "nome": "Sabão Ariel",
+      "quantidade": 1,
+      "preco": 30
+    },
+    {
+      "id": 2,
+      "nome": "Sabão Omo",
+      "quantidade": 2,
+      "preco": 10
+    },
+    {
+      "id": 3,
+      "nome": "Brilhante",
+      "quantidade": 3,
+      "preco": 40
+    },
+    {
+      "nome": "Pizza",
+      "quantidade": "5",
+      "preco": "10",
+      "id": 4
+    },
+    {
+      "nome": "Morango",
+      "quantidade": "1",
+      "preco": "4",
+      "id": 5
+    }
+]

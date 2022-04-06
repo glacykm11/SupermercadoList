@@ -16,13 +16,14 @@ export class ProdutoServiceService {
   }
 
   urlProdutos: string = 'http://localhost:3000/produtos';
+  urlProdutosMock: string = 'assets/mocks/db.json'
 
   getProdutos():Observable<Produto[]>{
-     return this.http.get<Produto[]>(this.urlProdutos).pipe(map((response:Produto[]) => response))
+     return this.http.get<Produto[]>(this.urlProdutosMock).pipe(map((response:Produto[]) => response))
   }
 
   getProdutoById(id: number):Observable<Produto>{
-    return this.http.get<Produto>(this.urlProdutos + '/' + id).pipe(map((response:Produto) => response))
+    return this.http.get<Produto>(this.urlProdutosMock + '/' + id).pipe(map((response:Produto) => response))
   }
 
   saveProduct(produto: Produto):Observable<Produto>{
